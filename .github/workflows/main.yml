@@ -8,7 +8,7 @@ on:
     - cron: '* * * * *'  # Run every hour
 
 jobs:
-  scrape:
+  bot:
     runs-on: ubuntu-latest
 
     steps:
