@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main  # Change this to your default branch name if different
-  schedule:
-    - cron: '* * * * *'  # Run every hour
-
 jobs:
   bot:
     runs-on: ubuntu-latest
@@ -28,5 +25,3 @@ jobs:
       - name: Run bot
         run: python main.py
 
-    env:
-      max-runs: 10
