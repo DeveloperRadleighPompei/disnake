@@ -1,4 +1,4 @@
-name: Python Script Workflows
+name: Python Script Workflow
 on:
   push:
     branches:
