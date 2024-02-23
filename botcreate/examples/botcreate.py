@@ -12,6 +12,12 @@ bot = commands.Bot(
     for i in range(number_of_commands):
         command_name = input("name of command: ")
         command_description = input("command description: ")
+        number_of_args = int(input("Number of args: "))
         f.write(f"""
 @bot.slash_command(name="{command_name}", description="{command_description}")
-""")
+""")    
+        f.write("async def num(inter: disnake.ApplicationCommandInteraction")
+        for i in range(number_of_args):
+            arg_name = input("Arg name: ")
+            arg_type = input("Type of arg: ")
+            f.write(f", {arg_name}:{arg_type}")
