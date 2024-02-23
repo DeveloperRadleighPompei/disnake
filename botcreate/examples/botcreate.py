@@ -21,4 +21,24 @@ bot = commands.Bot(
             arg_name = input("Arg name: ")
             arg_type = input("Type of arg: ")
             f.write(f", {arg_name}:{arg_type}")
-        f.write("):")
+        f.write("):\n")
+        f.write("""
+    try:
+        #*********
+        # Perform your desired operation with your args here
+        result = None # set to None as default
+
+
+        #*********
+        embed = disnake.Embed(title="Operation Result", description=f"The result of the operation is: {result}", color=0x00ff00)
+        await inter.response.send_message(embed=embed, ephemeral=True)\n
+""")
+        error_handling_bool = bool(input("do you want error handiling, enter True or False: "))
+        if error_handling_bool == True:
+            f.write("""
+    except Exception as e:
+        embed = disnake.Embed(title="Error", description=f"An error occurred: {e}", color=0xff0000)
+        await inter.response.send_message(embed=embed, ephemeral=True)
+
+
+""")
