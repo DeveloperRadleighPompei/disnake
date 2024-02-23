@@ -7,4 +7,4 @@ bot = commands.Bot(
     case_insensitive=True,
 )
 @bot.slash_command(name="h", description="h")
-async def num(inter: disnake.ApplicationCommandInteraction, one:int, one:int)
+async def num(inter: disnake.ApplicationCommandInteraction, one:int, two:int)

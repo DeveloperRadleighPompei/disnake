@@ -21,3 +21,4 @@ bot = commands.Bot(
             arg_name = input("Arg name: ")
             arg_type = input("Type of arg: ")
             f.write(f", {arg_name}:{arg_type}")
+        f.write("):")
