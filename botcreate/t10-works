@@ -84,4 +84,4 @@ async def num(inter: disnake.ApplicationCommandInteraction, num1:float, num2:flo
         await inter.response.send_message(embed=embed, ephemeral=True)
 
 
-bot.run("MTIwOTIyNjEyNjQyMjA1Njk5MQ.GDyMYI.I-KG1D_ii9Z4QfKQDzkLVkUg7apLnZmv7k5Ggk")
+bot.run("MTIwOTIyNjEyNjQyMjA1Njk5MQ.GVpbpe.Srg_uHGIQFe9R5ZLnLjNo77T03Zq_UkMttgr8M")
